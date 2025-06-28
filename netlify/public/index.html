@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Preço</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="home-screen">
+            <header>
+                <h1>PRONTO PARA INICIAR</h1>
+                <p>Faça sua primeira consulta agora!</p>
+            </header>
+            <main>
+                <button id="btn-scan"><img src="https://api.iconify.design/bx:barcode-reader.svg?color=white" alt=""> Escanear</button>
+                <button id="btn-search"><img src="https://api.iconify.design/bx:search.svg?color=white" alt=""> Pesquisar</button>
+            </main>
+        </div>
+
+        <div id="scanner-screen" class="hidden">
+            <div id="qr-reader"></div>
+            <button id="btn-stop-scan">Voltar</button>
+        </div>
+
+        <div id="result-screen" class="hidden">
+            <div id="result-content">
+                </div>
+            <div class="result-actions">
+                 <button id="btn-scan-again"><img src="https://api.iconify.design/bx:barcode-reader.svg?color=white" alt=""> Escanear Novo</button>
+                 <button id="btn-search-again"><img src="https://api.iconify.design/bx:search.svg?color=white" alt=""> Pesquisar</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Mercado Fictício</p>
+        <p>Powered by: Você!</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
