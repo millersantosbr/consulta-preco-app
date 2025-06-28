@@ -1,8 +1,10 @@
 # netlify.toml
 
 [build]
-  # Pasta que será publicada (nosso frontend)
-  publish = "public"
+  # Comando para construir seu projeto Vite (isso gera a pasta 'dist')
+  command = "npm run build" # Use "yarn build" if you prefer Yarn
+  # Pasta que será publicada (onde o Vite coloca os arquivos compilados)
+  publish = "dist"
   # Pasta onde estão nossas funções serverless
   functions = "netlify/functions"
 
