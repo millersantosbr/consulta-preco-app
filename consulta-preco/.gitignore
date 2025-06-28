@@ -1,0 +1,17 @@
+# Ignora a pasta de dependências do Node.js
+# Esta é a regra mais importante!
+/node_modules
+
+# Ignora arquivos de log
+*.log
+
+# Ignora arquivos de ambiente (usados para guardar senhas e chaves de API)
+.env
+.env.local
+
+# Ignora arquivos gerados pelo sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignora arquivos de cache de alguns editores
+.vscode/
